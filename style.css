@@ -1,0 +1,84 @@
+/* Accessibility and responsive styles */
+body {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+}
+
+/* High contrast for visually impaired */
+.high-contrast {
+  background-color: #000;
+  color: #fff;
+}
+
+.high-contrast .navbar {
+  background-color: #000 !important;
+}
+
+.high-contrast .card {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Filter classes */
+.filter-grayscale {
+  filter: grayscale(100%);
+}
+
+.filter-protanopia {
+  filter: contrast(1.2) brightness(1.1) hue-rotate(10deg) saturate(1.5);
+}
+
+.filter-deuteranopia {
+  filter: contrast(1.1) brightness(1.2) hue-rotate(-10deg) saturate(1.3);
+}
+
+.filter-tritanopia {
+  filter: contrast(1.3) brightness(0.9) hue-rotate(180deg) saturate(1.2);
+}
+
+/* Arrow buttons */
+.arrow-buttons .btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+
+.arrow-buttons .btn:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .arrow-buttons {
+    right: 10px;
+  }
+
+  .arrow-buttons .btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+}
+
+/* Custom styles for sections */
+#about {
+  min-height: 50vh;
+}
+
+#converter {
+  min-height: 50vh;
+}
+
+/* Ensure readability */
+.card-title, .form-label, .alert {
+  font-weight: bold;
+}
