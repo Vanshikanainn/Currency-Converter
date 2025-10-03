@@ -75,9 +75,4 @@ This project is open-source under the **MIT License**.
 
 ---
 
-### ✨ Optional Extras
 
-If you want to make it **even cooler**, you could:  
-- Add **shields/badges** for license, GitHub stars, or API status.  
-- Include **screenshots or GIFs** of the converter in action.  
-- Add a **live demo link** if hosted online.
